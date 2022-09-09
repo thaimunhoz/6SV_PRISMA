@@ -1,5 +1,6 @@
 # 6SV_python in PRISMA images
 Authors: Rejane Paulino, Felipe Nincao, Thainara Munhoz
+
 National Institute for Space Research (INPE) - Instrumentation Laboratory for Aquatic Systems (LabISA)
 
 Application of the 6S Radiative Transfer Model using the Py6S python library on PRISMA images. It allows you to run 6S simulations using Py6S and apply the simulation to the radiative transfer equation for atmosphere correction on the PRISMA L1 images.
