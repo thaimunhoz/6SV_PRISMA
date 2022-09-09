@@ -91,7 +91,7 @@ for a in range(0,frs_nova_transposed.shape[1]):
     
     max_value_index = frs_nova_transposed[frs_nova_transposed.iloc[:,a]==frs_nova_transposed.iloc[:,a].max()].index.values[0]
     waves_max_int.append(max_value_index)
-    
+    max_value_temp = frs[frs.iloc[:,a]==frs.iloc[:,a].max()].index.values[0]
     wv_value = frs_nova_transposed.columns.values[a]
         
     #srf_values = list(frs_nova_transposed.loc[379:1046.5,wv_value])
