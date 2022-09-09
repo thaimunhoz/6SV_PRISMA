@@ -5,6 +5,7 @@ National Institute for Space Research (INPE) - Instrumentation Laboratory for Aq
 Application of the 6S Radiative Transfer Model using the Py6S python library on PRISMA images. It allows you to run 6S simulations using Py6S and apply the simulation to the radiative transfer equation for atmosphere correction on the PRISMA L1 images.
 
 **PY6S_run script**
+
 Input data:
   - Aerosol concentration at 550nm
   - Atmospheric profile (**AtmosProfile**) → It considers the characteristics associated with this profile such as the amount of water vapour, pressure and ozone and incorporates it into the model. You can use a ready-made profile that is chosen based on latitude (`AtmosProfile.Tropical, AtmosProfile.MidlatitudeSummer, AtmosProfile.MidlatitudeWinter`), you can enter specific values ​​for water vapor and ozone*,* or you can to define a profile from radiosonde measurements.
@@ -17,6 +18,7 @@ Output data:
   - Two JSON files (VNIR and SWIR) containing a dictionary with all the parameters necessary for the application o the Radiative Transfer Equation
   
 **Radiative_Transfer_Equation scrypt**
+
 Input data:
    - Prisma_band_data → Excel file containing: central wavelength of each band, fwhm, and the name of the band (this name must be associated with the name of the saved R_TOA images;
   - TOA Reflectance Images → One image for each band, saved separately in a single folder
